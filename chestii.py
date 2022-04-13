@@ -26,11 +26,11 @@ lista_noua = []
 # print(my_function(7))
 
 
-a=int(input())
-b=int(input())
-s=0
+
 try:
-   s=a+b
-   s=s/0
-except ValueError as e:
-   print(e)
+	a = 8
+	b = 0
+	c = a / b
+except ZeroDivisionError:
+	c = 0
+print(c)
